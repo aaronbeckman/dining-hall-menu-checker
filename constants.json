@@ -28,5 +28,7 @@
     },
     "date_xpath": "//*[@id=\"menu_display\"]/div[3]/div/span[2]",
     "next_day_xpath": "//*[@id=\"menu_display\"]/div[3]/div/span[3]",
-    "previous_day_xpath": "//*[@id=\"menu_display\"]/div[3]/div/span[1]"
+    "previous_day_xpath": "//*[@id=\"menu_display\"]/div[3]/div/span[1]",
+    "destination": "https://menus.housing.wisc.edu/",
+    "chromedriver_path": ".\\chromedriver\\chromedriver.exe"
 }

@@ -8,14 +8,15 @@ from selenium.webdriver.common.keys import Keys
 
 
 class Web_Driver:
-    def __init__(self, dest, path):
+    def __init__(self):
         with open('constants.json') as f:
-            xpaths = json.load(f)
-
-        self.date_xpath = xpaths["date_xpath"]
-        self.months = xpaths["months"]
-        self.next_day_xpath = xpaths["next_day_xpath"]
-        self.previous_day_xpath = xpaths["previous_day_xpath"]
+            constants = json.load(f)
+        dest = constants["destination"]
+        path = constants["chromdriver_path"]
+        self.date_xpath = constants["date_xpath"]
+        self.months = constants["months"]
+        self.next_day_xpath = constants["next_day_xpath"]
+        self.previous_day_xpath = constants["previous_day_xpath"]
 
         try:
             options = webdriver.ChromeOptions()

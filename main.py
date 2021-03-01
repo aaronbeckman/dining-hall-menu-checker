@@ -31,18 +31,17 @@ def exit_handler():
 atexit.register(exit_handler)
 
 with open('constants.json') as f:
-    xpaths = json.load(f)
+    constants = json.load(f)
 
-market = xpaths["market_xpaths"]
-meal = xpaths["meal_xpaths"]
-next_day = xpaths["next_day_xpath"]
-previous_day = xpaths["previous_day_xpath"]
+market = constants["market_xpaths"]
+meal = constants["meal_xpaths"]
+next_day = constants["next_day_xpath"]
+previous_day = constants["previous_day_xpath"]
 
 ######################### MAIN STUFF #########################
 
 logging.info('Starting webdriver...')
-w = Web_Driver('https://menus.housing.wisc.edu/',
-               '.\chromedriver\chromedriver.exe')
+w = Web_Driver()
 
 w.select_location(market['Four Lakes'])
 w.select_meal(meal['Breakfast'])

@@ -1,0 +1,32 @@
+{
+    "months": {
+        "January": 1,
+        "February": 2,
+        "March": 3,
+        "April": 4,
+        "May": 5,
+        "June": 6,
+        "July": 7,
+        "August": 8,
+        "September": 9,
+        "October": 10,
+        "November": 11,
+        "December": 12
+    },
+    "market_xpaths": {
+        "Carson's": "//*[@id=\"menu_display\"]/div[2]/div[1]/div/div[1]/a",
+        "Four Lakes": "//*[@id=\"menu_display\"]/div[2]/div[1]/div/div[2]/a",
+        "Gordon": "//*[@id=\"menu_display\"]/div[2]/div[1]/div/div[3]/a",
+        "Liz's": "//*[@id=\"menu_display\"]/div[2]/div[1]/div/div[4]/a",
+        "Rheta's": "//*[@id=\"menu_display\"]/div[2]/div[1]/div/div[5]/a"
+    },
+    "meal_xpaths": {
+        "Breakfast": "//*[@id=\"breakfast_meal\"]",
+        "Lunch": "//*[@id=\"lunch_meal\"]",
+        "Dinner": "//*[@id=\"dinner_meal\"]",
+        "Late Night": "//*[@id=\"late_night_meal\"]"
+    },
+    "date_xpath": "//*[@id=\"menu_display\"]/div[3]/div/span[2]",
+    "next_day_xpath": "//*[@id=\"menu_display\"]/div[3]/div/span[3]",
+    "previous_day_xpath": "//*[@id=\"menu_display\"]/div[3]/div/span[1]"
+}

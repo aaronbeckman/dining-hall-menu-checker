@@ -37,6 +37,7 @@ market = constants["market_xpaths"]
 meal = constants["meal_xpaths"]
 next_day = constants["next_day_xpath"]
 previous_day = constants["previous_day_xpath"]
+f.close()
 
 ######################### MAIN STUFF #########################
 

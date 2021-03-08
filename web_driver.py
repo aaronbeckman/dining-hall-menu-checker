@@ -12,11 +12,12 @@ class Web_Driver:
         with open('constants.json') as f:
             constants = json.load(f)
         dest = constants["destination"]
-        path = constants["chromdriver_path"]
+        path = constants["chromedriver_path"]
         self.date_xpath = constants["date_xpath"]
         self.months = constants["months"]
         self.next_day_xpath = constants["next_day_xpath"]
         self.previous_day_xpath = constants["previous_day_xpath"]
+        f.close()
 
         try:
             options = webdriver.ChromeOptions()
